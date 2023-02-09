@@ -1,6 +1,6 @@
 # react-ts-vite-pnpm
 
-# Getting Started with Create React App
+# React - Typescript - Vite - PNPM
 
 This project was created with [Vite](https://vitejs.dev/guide/) and using [PNPM](https://pnpm.io/) as package manager.
 
