@@ -2,7 +2,7 @@
 
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Vite](https://vitejs.dev/guide/) and using [PNPM](https://pnpm.io/) as package manager.
 
 ## Available Scripts
 
