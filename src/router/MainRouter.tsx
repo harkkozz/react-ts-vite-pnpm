@@ -1,14 +1,21 @@
 import React from 'react';
-import ComponentOne from 'components/ComponentOne';
+
 import { Route, Routes } from 'react-router-dom';
+
+import { HOME_PAGE, OTHER_PAGE } from 'config/router/constants';
+
+import HomePage from 'pages/HomePage';
+import ComponentOne from 'pages/OtherPage';
+
 import ErrorBoundary from 'components/ErrorBoundary';
 
 const MainRouter: React.FC<React.PropsWithChildren> = () => {
   return (
     <Routes>
+      <Route element={<HomePage />} path={HOME_PAGE} />
       <Route
         element={<ComponentOne />}
-        path="/component-one"
+        path={OTHER_PAGE}
         errorElement={<ErrorBoundary />}
         action={(val) => console.log('action', val)}
         loader={(val) => console.log('loader', val)}
