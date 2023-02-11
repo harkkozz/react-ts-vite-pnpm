@@ -11,6 +11,7 @@
     "<THIRD_PARTY_MODULES>",
     "^config/(.*)$",
     "^router/(.*)$",
+    "^store/(.*)$",
     "^pages/(.*)$",
     "^components/(.*)$",
     "^[./]"

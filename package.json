@@ -11,8 +11,10 @@
     "lint:tsc": "tsc --project tsconfig.json"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
     "vite-plugin-svgr": "^2.4.0"
@@ -43,5 +45,10 @@
         "@vue/compier-sfc"
       ]
     }
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ]
 }
