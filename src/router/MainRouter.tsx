@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 
-import { HOME_PAGE, OTHER_PAGE } from 'config/router/constants';
+import { HOME_PAGE, OTHER_PAGE } from 'router/constants';
 
-import HomePage from 'pages/HomePage';
-import ComponentOne from 'pages/OtherPage';
+import HomePage from 'pages/HomePage/HomePage';
+import ComponentOne from 'pages/OtherPage/OtherPage';
 
 import ErrorBoundary from 'components/ErrorBoundary';
 
