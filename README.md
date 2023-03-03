@@ -4,6 +4,10 @@
 
 This project was created with [Vite](https://vitejs.dev/guide/) and using [PNPM](https://pnpm.io/) as package manager.
 
+## Install PNPM globally in terms of using it to manage packages and run the scripts
+
+### `npm i -g pnpm`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -25,7 +29,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 
 ### `pnpm format`
 
