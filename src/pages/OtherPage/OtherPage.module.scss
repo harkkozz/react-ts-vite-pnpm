@@ -1,0 +1,14 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  tbody tr {
+    cursor: pointer;
+  }
+}
+
+.table td,
+.table th {
+  padding: 7px;
+  border: 1px solid black;
+}

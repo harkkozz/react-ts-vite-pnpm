@@ -1,8 +1,7 @@
 {
   "env": {
-    "node": true,
     "browser": true,
-    "amd": true
+    "es2021": true
   },
   "overrides": [
     {
@@ -23,7 +22,7 @@
   "parserOptions": {
     "project": ["tsconfig.json"]
   },
-  "extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended", "eslint:recommended"],
+  "extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier"],
   "plugins": ["react-hooks"],
   "rules": {
     "eqeqeq": ["warn", "smart"],
