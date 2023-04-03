@@ -19,6 +19,7 @@
 .*un~
 .history
 *.gz
+.vscode
 
 # logs
 npm-debug.log*
