@@ -1,39 +1,55 @@
-# react-ts-vite-pnpm
+# React with TypeScript Boilerplate using Vite and PNPM
 
-# React - Typescript - Vite - PNPM
+This is a boilerplate project for React with TypeScript, using Vite as the server and PNPM as the package manager. It includes all the necessary files and dependencies to get started with a React project.
 
-This project was created with [Vite](https://vitejs.dev/guide/) and using [PNPM](https://pnpm.io/) as package manager.
+## Installation
 
-## Install PNPM globally in terms of using it to manage packages and run the scripts
+To get started with this boilerplate, you'll need to have PNPM and Node.js installed on your computer. Once you have those, follow these steps:
 
-### `npm i -g pnpm`
+Clone this repository to your computer.
 
-## Available Scripts
+`HTTPS`
 
-In the project directory, you can run:
+```bash
+ git clone https://github.com/harkkozz/react-ts-vite-pnpm.git
+```
 
-### `pnpm start`
+`SSH`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+ git clone git@github.com:harkkozz/react-ts-vite-pnpm.git
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Navigate to the project directory in your terminal.
 
-### `pnpm build`
+```bash
+ cd react-ts-vite-pnpm
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run `pnpm install` to install the project dependencies.
+Run local server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+pnpm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `pnpm format`
+To run the development server, simply run `pnpm start` in your terminal. This will start the Vite development server, and your app should be available at http://localhost:3000/.
 
-Format files using Prettier.
+Replace `.env.example` with `.env`
 
-### `pnpm lint`
+To build your app for production, run `pnpm run build`. This will build your app and output the files to the dist/ directory.
 
-Runs eslint from local configuration which will check potentional war.nings/errors
+## PNPM Configuration
+
+This project uses PNPM as the package manager, and includes a peerDependencyRules configuration to ignore missing peer dependencies for certain packages.
+
+## Linting and Formatting
+
+This project includes pre-commit hooks using husky and lint-staged. When you commit your changes, lint-staged will run ESLint and Prettier on your staged files. If there are any errors or warnings, your commit will be blocked.
+
+To manually run the linter or formatter, you can use the following npm scripts:
+
+- `pnpm run lint`: Runs ESLint on your code.
+- `pnpm run format`: Formats your code using Prettier.

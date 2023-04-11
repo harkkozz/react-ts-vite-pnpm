@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
 
@@ -9,6 +10,7 @@ import { decrement, increment } from 'store/counter/counterSlice';
 import styles from './HomePage.module.scss';
 
 const HomePage: React.FC<React.PropsWithChildren> = () => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const counter = useSelector(counterSelector);
   const navigate = useNavigate();
@@ -20,13 +22,13 @@ const HomePage: React.FC<React.PropsWithChildren> = () => {
         Other page{' '}
       </a>
       <div className={styles.actions}>
-        <label htmlFor="increment-button">Increment</label>
+        <label htmlFor="increment-button">{t('increment')}</label>
         <button id="increment-button" className={styles.actionsButton} onClick={() => dispatch(increment())}>
-          Increment
+          {t('increment')}
         </button>
         <label htmlFor="decrement-button">Decrement</label>
         <button id="decrement-button" className={styles.actionsButton} onClick={() => dispatch(decrement())}>
-          Decrement
+          {t('decrement')}
         </button>
         <div className={styles.result}>{counter}</div>
       </div>

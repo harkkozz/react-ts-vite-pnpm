@@ -1,5 +1,10 @@
 {
   "name": "react-ts-vite-pnpm",
+  "author": {
+    "name": "Haris Adilovic",
+    "email": "adilovicharis94@gmail.com",
+    "url": "https://www.linkedin.com/in/harkkozz/"
+  },
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -14,8 +19,11 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "i18next": "^22.4.14",
+    "i18next-browser-languagedetector": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
     "react-redux": "^8.0.5",
     "react-router": "^6.8.2",
     "react-router-dom": "^6.8.2",
