@@ -1,14 +1,15 @@
-.table {
-  border-collapse: collapse;
-  width: 100%;
-
-  tbody tr {
-    cursor: pointer;
-  }
+.heading {
+  text-align: center;
 }
 
-.table td,
-.table th {
-  padding: 7px;
-  border: 1px solid black;
+.link {
+  cursor: pointer;
+  display: flex;
+  width: 90px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: white;
+  font-size: 14px;
 }

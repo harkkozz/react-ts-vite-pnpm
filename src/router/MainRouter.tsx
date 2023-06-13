@@ -13,13 +13,7 @@ const MainRouter: React.FC<React.PropsWithChildren> = () => {
   return (
     <Routes>
       <Route element={<HomePage />} path={HOME_PAGE} />
-      <Route
-        element={<ComponentOne />}
-        path={OTHER_PAGE}
-        errorElement={<ErrorBoundary />}
-        action={(val) => console.log('action', val)}
-        loader={(val) => console.log('loader', val)}
-      />
+      <Route element={<ComponentOne />} path={OTHER_PAGE} errorElement={<ErrorBoundary />} />
     </Routes>
   );
 };

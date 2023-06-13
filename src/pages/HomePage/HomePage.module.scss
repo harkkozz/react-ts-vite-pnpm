@@ -1,6 +1,5 @@
-.homePage {
-  width: 100%;
-  padding: 20px;
+.heading {
+  text-align: center;
 }
 
 .link {
@@ -9,24 +8,8 @@
   width: 90px;
   border: 1px solid #000;
   border-radius: 5px;
-  padding: 0 5px;
+  padding: 10px;
   margin: 10px auto;
-}
-
-.actions {
-  display: flex;
-  flex-direction: column;
-
-  .actionsButton {
-    cursor: pointer;
-    margin-bottom: 20px;
-    font-size: 24px;
-    width: 150px;
-  }
-}
-
-.result {
-  font-size: 24px;
-  display: flex;
-  margin: 20px auto;
+  background-color: white;
+  font-size: 14px;
 }
