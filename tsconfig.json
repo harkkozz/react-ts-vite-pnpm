@@ -21,6 +21,6 @@
     "types": ["vite/client"],
     "incremental": true
   },
-  "include": ["./vite.config.ts", "src", "src/**.d.ts"],
+  "include": ["./vite.config.ts", "src", "src/**.d.ts", "src/vitest.setup.ts"],
   "exclude": ["node_modules"]
 }

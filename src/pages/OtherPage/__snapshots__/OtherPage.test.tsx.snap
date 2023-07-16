@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Other page > Should match snapshot 1`] = `
+<body>
+  <div>
+    <div>
+      <h2
+        class="_heading_2aa34a"
+      >
+        Other page
+      </h2>
+      <button
+        class="_link_2aa34a"
+      >
+        Home page
+      </button>
+    </div>
+  </div>
+</body>
+`;
