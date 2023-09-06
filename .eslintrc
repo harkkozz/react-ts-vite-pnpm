@@ -58,7 +58,6 @@
     "react/jsx-no-useless-fragment": ["error", { "allowExpressions": true }],
     "no-debugger": "error",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-duplicate-imports": "error",
     "@typescript-eslint/no-useless-escape": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
