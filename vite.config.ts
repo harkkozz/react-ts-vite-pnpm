@@ -16,10 +16,10 @@ export default defineConfig({
     reporters: ['default'],
     outputFile: { 'vitest-sonar-reporter': 'sonar-report.xml' },
     coverage: {
-      reporter: ['text', 'lcov'],
+      reporter: ['text', 'lcov', 'html'],
       include: ['src/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
       exclude: ['src/**/*.test.{js,ts,jsx,tsx}', 'src/**/*.config.{js,ts,jsx,tsx}'],
-      provider: 'c8',
+      provider: 'istanbul',
       all: true,
       lines: 30,
       functions: 30,
