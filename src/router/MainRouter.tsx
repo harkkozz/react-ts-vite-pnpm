@@ -2,12 +2,10 @@ import React from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 
-import { HOME_PAGE, OTHER_PAGE } from 'router/constants';
-
+import ErrorBoundary from 'components/ErrorBoundary';
 import HomePage from 'pages/HomePage/HomePage';
 import ComponentOne from 'pages/OtherPage/OtherPage';
-
-import ErrorBoundary from 'components/ErrorBoundary';
+import { HOME_PAGE, OTHER_PAGE } from 'router/constants';
 
 const MainRouter: React.FC<React.PropsWithChildren> = () => {
   return (

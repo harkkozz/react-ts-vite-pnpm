@@ -3,7 +3,7 @@ import { vi } from 'vitest';
 
 vi.mock('i18next', () => ({
   use: vi.fn(),
-  init: vi.fn()
+  init: vi.fn(),
 }));
 
 vi.mock('react-i18next', () => ({
@@ -14,15 +14,15 @@ vi.mock('react-i18next', () => ({
       t: (str) => str,
       i18n: {
         // eslint-disable-next-line @typescript-eslint/no-empty-function
-        changeLanguage: () => new Promise(() => {})
-      }
+        changeLanguage: () => new Promise(() => {}),
+      },
     };
-  }
+  },
 }));
 
 vi.mock('react-router-dom', async () => {
   const reactRouter = await vi.importActual('react-router-dom');
   return {
-    ...(reactRouter as any)
+    ...(reactRouter as any),
   };
 });

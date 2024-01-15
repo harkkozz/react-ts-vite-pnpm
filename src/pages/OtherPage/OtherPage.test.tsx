@@ -1,6 +1,7 @@
 import { fireEvent, render } from '@testing-library/react';
-import Test from 'testUtils/TestApp';
 import { describe, expect, it, vi } from 'vitest';
+
+import Test from 'testUtils/TestApp';
 
 import OtherPage from './OtherPage';
 
@@ -11,7 +12,7 @@ describe('Other page', () => {
     const { baseElement } = render(
       <Test path="/other-page">
         <OtherPage />
-      </Test>
+      </Test>,
     );
 
     expect(baseElement).toMatchSnapshot();
@@ -21,7 +22,7 @@ describe('Other page', () => {
     const { getAllByRole } = render(
       <Test path="/other-page">
         <OtherPage />
-      </Test>
+      </Test>,
     );
     const onNextPage = getAllByRole('button', { name: 'Home page' });
     fireEvent.click(onNextPage[0]);

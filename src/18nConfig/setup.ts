@@ -13,17 +13,17 @@ export function idiomSetup() {
     .use(detector)
     .init({
       detection: {
-        caches: []
+        caches: [],
       },
       resources: translationResources,
       defaultNS: 'translation',
       ns: ['translation'],
       fallbackLng: 'en',
       interpolation: {
-        escapeValue: false
+        escapeValue: false,
       },
       react: {
-        useSuspense: true
-      }
+        useSuspense: true,
+      },
     });
 }
