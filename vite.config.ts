@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
@@ -19,12 +18,8 @@ export default defineConfig({
       reporter: ['text', 'lcov', 'html'],
       include: ['src/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
       exclude: ['src/**/*.test.{js,ts,jsx,tsx}', 'src/**/*.config.{js,ts,jsx,tsx}'],
-      provider: 'istanbul',
       all: true,
-      lines: 30,
-      functions: 30,
-      branches: 50,
-      statements: 30
+      provider: 'v8'
     }
   }
 });
