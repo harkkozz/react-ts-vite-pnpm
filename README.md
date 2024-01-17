@@ -1,4 +1,4 @@
-# React with TypeScript Boilerplate using Vite and PNPM
+# React with TypeScript and StyleX Boilerplate using Vite and PNPM
 
 This is a boilerplate project for React with TypeScript, using Vite as the server and PNPM as the package manager. It includes all the necessary files and dependencies to get started with a React project.
 
