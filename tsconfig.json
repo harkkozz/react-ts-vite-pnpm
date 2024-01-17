@@ -21,6 +21,14 @@
     "types": ["vite/client", "node"],
     "incremental": true
   },
-  "include": ["./vite.config.ts", "src", "src/**.d.ts", "src/vitest.setup.ts", "commitlint.config.ts"],
+  "include": [
+    "vite.config.ts",
+    "src",
+    "src/**.d.ts",
+    "./src/vitest.setup.ts",
+    "commitlint.config.ts",
+    "./vite-env.d.ts",
+    "./vitest-env.d.ts"
+  ],
   "exclude": ["node_modules"]
 }

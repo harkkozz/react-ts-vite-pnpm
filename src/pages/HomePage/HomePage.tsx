@@ -1,18 +1,21 @@
-import React from 'react';
-
+import * as stylex from '@stylexjs/stylex';
 import { useNavigate } from 'react-router';
 
-import styles from './HomePage.module.scss';
+import Button from 'components/Button/Button';
 
-const HomePage: React.FC<React.PropsWithChildren> = () => {
+const styles = stylex.create({
+  heading: {
+    textAlign: 'center',
+  },
+});
+
+const HomePage = () => {
   const navigate = useNavigate();
 
   return (
     <div>
-      <h2 className={styles.heading}>Main page</h2>
-      <button className={styles.link} onClick={() => navigate('other-page')}>
-        Other page{' '}
-      </button>
+      <h2 {...stylex.props(styles.heading)}>Main page</h2>
+      <Button text="Other page" onClick={() => navigate('other-page')} bgColor="red" />
     </div>
   );
 };

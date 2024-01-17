@@ -5,15 +5,15 @@ exports[`Home page > Should match snapshot 1`] = `
   <div>
     <div>
       <h2
-        class="_heading_63583b"
+        class="HomePage__styles.heading x2b8uid"
       >
         Main page
       </h2>
       <button
-        class="_link_63583b"
+        class="Button__styles.button x1ypdohk x78zum5 x1qihwyb xmgby6i xddr76m x1835gkm x15tramd xq1mx2j xkpwil5"
+        style="--backgroundColor: red;"
       >
         Other page
-         
       </button>
     </div>
   </div>
