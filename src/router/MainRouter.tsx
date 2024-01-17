@@ -12,6 +12,7 @@ const MainRouter: React.FC<React.PropsWithChildren> = () => {
     <Routes>
       <Route element={<HomePage />} path={HOME_PAGE} />
       <Route element={<ComponentOne />} path={OTHER_PAGE} errorElement={<ErrorBoundary />} />
+      <Route element={<div>404 Page not found</div>} path="*" />
     </Routes>
   );
 };

@@ -1,6 +1,8 @@
 {
   "translation": {
     "increment": "Increment",
-    "decrement": "Decrement"
+    "decrement": "Decrement",
+    "otherPage": "Other page",
+    "homePage": "Home page"
   }
 }
