@@ -22,7 +22,7 @@
     "prepare": "husky install || npx -y husky install"
   },
   "dependencies": {
-    "@stylexjs/stylex": "^0.4.1",
+    "@stylexjs/stylex": "^0.5.0",
     "@types/node": "^20.11.2",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",
