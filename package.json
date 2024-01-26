@@ -37,7 +37,7 @@
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@commitlint/types": "^18.4.4",
-    "@stylexjs/babel-plugin": "^0.4.1",
+    "@stylexjs/babel-plugin": "^0.5.0",
     "@stylexjs/rollup-plugin": "^0.4.1",
     "@testing-library/react": "^14.1.2",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
