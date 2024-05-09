@@ -16,7 +16,7 @@ dependencies:
     version: 23.10.1
   i18next-browser-languagedetector:
     specifier: ^7.2.0
-    version: 7.2.0
+    version: 7.2.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -371,6 +371,13 @@ packages:
 
   /@babel/runtime@7.24.1:
     resolution: {integrity: sha512-+BIznRzyqBf+2wCTxcKE3wDjfGeCoVE61KSHGpkzqrLi8qxqFwBeUFyId2cxkTmm55fzDGnm0+yCxaxygrLUnQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.1
+    dev: false
+
+  /@babel/runtime@7.24.5:
+    resolution: {integrity: sha512-Nms86NXrsaeU9vbBJKni6gXiEXZ4CVpYVzEjDH9Sb8vmZ3UljyA1GSOJl/6LGPO8EHLuSF9H+IxNXHPX8QHJ4g==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
@@ -2897,10 +2904,10 @@ packages:
     hasBin: true
     dev: true
 
-  /i18next-browser-languagedetector@7.2.0:
-    resolution: {integrity: sha512-U00DbDtFIYD3wkWsr2aVGfXGAj2TgnELzOX9qv8bT0aJtvPV9CRO77h+vgmHFBMe7LAxdwvT/7VkCWGya6L3tA==}
+  /i18next-browser-languagedetector@7.2.1:
+    resolution: {integrity: sha512-h/pM34bcH6tbz8WgGXcmWauNpQupCGr25XPp9cZwZInR9XHSjIFDYp1SIok7zSPsTOMxdvuLyu86V+g2Kycnfw==}
     dependencies:
-      '@babel/runtime': 7.23.8
+      '@babel/runtime': 7.24.5
     dev: false
 
   /i18next@23.10.1:
