@@ -1,4 +1,3 @@
-import styleXBabelPlugin from '@stylexjs/babel-plugin';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
@@ -6,34 +5,7 @@ import svgr from 'vite-plugin-svgr';
 import tsConfigPath from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  plugins: [
-    react({
-      babel: {
-        plugins: [
-          [
-            styleXBabelPlugin,
-            {
-              dev: true,
-              // Set this to true for snapshot testing
-              // default: false
-              test: false,
-              // Required for CSS variable support
-              unstable_moduleResolution: {
-                // type: 'commonJS' | 'haste'
-                // default: 'commonJS'
-                type: 'commonJS',
-                // The absolute path to the root directory of your project
-                rootDir: '.',
-              },
-            },
-          ],
-        ],
-      },
-    }),
-    svgr(),
-    tsConfigPath(),
-    checker({ typescript: true }),
-  ],
+  plugins: [react(), svgr(), tsConfigPath(), checker({ typescript: true })],
   server: { port: 3000 },
   test: {
     setupFiles: './src/vitest.setup.ts',
