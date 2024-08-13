@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
       <h2>{t('homePage')}</h2>
-      <Button text={t('otherPage')} onClick={() => navigate('/other-page')} bgColor="red" />
+      <Button bgColor="red" text={t('otherPage')} onClick={() => navigate('/other-page')} />
     </div>
   );
 };

@@ -8,7 +8,7 @@ import Button from 'components/Button/Button';
 import styles from './OtherPage.module.scss';
 
 const OtherPage: React.FC<React.PropsWithChildren> = () => {
-  const { t } = useTranslation('');
+  const { t } = useTranslation();
 
   const navigate = useNavigate();
 

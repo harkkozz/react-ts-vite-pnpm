@@ -1,8 +1,8 @@
-import { PropsWithChildren } from 'react';
+import { type PropsWithChildren } from 'react';
 
 import { MemoryRouter } from 'react-router-dom';
 
-const Test: React.FC<PropsWithChildren<any>> = ({ path, children }) => (
+const Test: React.FC<PropsWithChildren<{ path?: string }>> = ({ path, children }) => (
   <MemoryRouter initialEntries={[!path ? '/' : path]}>{children}</MemoryRouter>
 );
 
