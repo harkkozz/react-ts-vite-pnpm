@@ -26,7 +26,7 @@
     "prepare": "husky",
     "commitlint": "commitlint --edit",
     "i18next:interface": "i18next-resources-for-ts interface -i ./src/i18n/translations -o ./src/i18n/resources-type.d.ts & prettier --write ./src/i18n/resources-type.d.ts",
-    "i18next:toc": "i18next-resources-for-ts toc -i ./src/i18n/translations -o ./src/i18n/resources.ts & prettier --write ./src/i18n/resources.ts"
+    "i18next:toc": "i18next-resources-for-ts toc -i ./src/i18n/translations -o ./src/i18n/resources.ts & prettier --write ./src/i18n"
   },
   "dependencies": {
     "i18next": "^23.12.3",
