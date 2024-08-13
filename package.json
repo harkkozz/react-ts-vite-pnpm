@@ -5,6 +5,11 @@
     "email": "adilovicharis94@gmail.com",
     "url": "https://www.linkedin.com/in/harkkozz/"
   },
+  "engines": {
+    "node": "20",
+    "pnpm": ">=9",
+    "npm": "please-use-pnpm"
+  },
   "private": true,
   "version": "0.0.0",
   "scripts": {
