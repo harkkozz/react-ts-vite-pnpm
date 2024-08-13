@@ -74,9 +74,5 @@
         "@vue/compier-sfc"
       ]
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,md}": "prettier --write",
-    "src/**/*.{j,t}s?(x)": "eslint --cache --fix"
   }
 }
