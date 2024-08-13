@@ -68,7 +68,7 @@ importers:
         version: 4.3.1(vite@5.3.5(@types/node@20.14.15)(sass@1.77.8))
       '@vitest/coverage-v8':
         specifier: ^1.6.0
-        version: 1.6.0(vitest@1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@13.10.1)(sass@1.77.8))
+        version: 1.6.0(vitest@1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@14.12.3)(sass@1.77.8))
       '@vitest/ui':
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0)
@@ -85,8 +85,8 @@ importers:
         specifier: ^4.6.2
         version: 4.6.2(eslint@8.57.0)
       happy-dom:
-        specifier: ^13.10.1
-        version: 13.10.1
+        specifier: ^14.0.0
+        version: 14.12.3
       husky:
         specifier: ^9.1.2
         version: 9.1.3
@@ -119,7 +119,7 @@ importers:
         version: 4.3.2(typescript@5.5.4)(vite@5.3.5(@types/node@20.14.15)(sass@1.77.8))
       vitest:
         specifier: ^1.6.0
-        version: 1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@13.10.1)(sass@1.77.8)
+        version: 1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@14.12.3)(sass@1.77.8)
 
 packages:
 
@@ -1464,8 +1464,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  happy-dom@13.10.1:
-    resolution: {integrity: sha512-9GZLEFvQL5EgfJX2zcBgu1nsPUn98JF/EiJnSfQbdxI6YEQGqpd09lXXxOmYonRBIEFz9JlGCOiPflDzgS1p8w==}
+  happy-dom@14.12.3:
+    resolution: {integrity: sha512-vsYlEs3E9gLwA1Hp+w3qzu+RUDFf4VTT8cyKqVICoZ2k7WM++Qyd2LwzyTi5bqMJFiIC/vNpTDYuxdreENRK/g==}
     engines: {node: '>=16.0.0'}
 
   has-bigints@1.0.2:
@@ -3460,7 +3460,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@1.6.0(vitest@1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@13.10.1)(sass@1.77.8))':
+  '@vitest/coverage-v8@1.6.0(vitest@1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@14.12.3)(sass@1.77.8))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -3475,7 +3475,7 @@ snapshots:
       std-env: 3.7.0
       strip-literal: 2.1.0
       test-exclude: 6.0.0
-      vitest: 1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@13.10.1)(sass@1.77.8)
+      vitest: 1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@14.12.3)(sass@1.77.8)
     transitivePeerDependencies:
       - supports-color
 
@@ -3510,7 +3510,7 @@ snapshots:
       pathe: 1.1.2
       picocolors: 1.0.1
       sirv: 2.0.4
-      vitest: 1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@13.10.1)(sass@1.77.8)
+      vitest: 1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@14.12.3)(sass@1.77.8)
 
   '@vitest/utils@1.6.0':
     dependencies:
@@ -4330,7 +4330,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  happy-dom@13.10.1:
+  happy-dom@14.12.3:
     dependencies:
       entities: 4.5.0
       webidl-conversions: 7.0.0
@@ -5427,7 +5427,7 @@ snapshots:
       fsevents: 2.3.3
       sass: 1.77.8
 
-  vitest@1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@13.10.1)(sass@1.77.8):
+  vitest@1.6.0(@types/node@20.14.15)(@vitest/ui@1.6.0)(happy-dom@14.12.3)(sass@1.77.8):
     dependencies:
       '@vitest/expect': 1.6.0
       '@vitest/runner': 1.6.0
@@ -5452,7 +5452,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.14.15
       '@vitest/ui': 1.6.0(vitest@1.6.0)
-      happy-dom: 13.10.1
+      happy-dom: 14.12.3
     transitivePeerDependencies:
       - less
       - lightningcss
