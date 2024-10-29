@@ -6,7 +6,7 @@
     "url": "https://www.linkedin.com/in/harkkozz/"
   },
   "engines": {
-    "node": "20",
+    "node": "22",
     "pnpm": ">=9",
     "npm": "please-use-pnpm"
   },
