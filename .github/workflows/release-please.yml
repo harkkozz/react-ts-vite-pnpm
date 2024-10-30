@@ -1,3 +1,5 @@
+name: release-please
+
 on:
   push:
     branches:
@@ -7,13 +9,12 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please
-
 jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           # this assumes that you have created a personal access token
           # (PAT) and configured it as a GitHub action secret named
@@ -21,4 +22,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # this is a built-in strategy in release-please, see "Action Inputs"
           # for more options
-          release-type: simple
+          config-file: .release-please-config.json
+          manifest-file: .release-please-manifest.json

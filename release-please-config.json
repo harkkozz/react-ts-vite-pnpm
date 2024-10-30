@@ -3,16 +3,14 @@
   "separate-pull-requests": true,
   "group-pull-request-title-pattern": "chore${scope}: release",
   "pull-request-title-pattern": "chore${scope}: release ${component} ${version}",
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "tag-separator": "@",
   "packages": {
-    "apps/pdc-fe": {
+    ".": {
       "component": "@ams-ix/pdc-fe",
       "changelog-path": "CHANGELOG.md",
-      "release-type": "node",
-      "bump-minor-pre-major": false,
-      "bump-patch-for-minor-pre-major": false,
-      "draft": false,
-      "prerelease": false
+      "release-type": "node"
     }
-  },
-  "plugins": []
+  }
 }
