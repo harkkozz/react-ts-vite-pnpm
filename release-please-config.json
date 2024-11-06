@@ -8,7 +8,7 @@
   "tag-separator": "@",
   "packages": {
     ".": {
-      "component": "@ams-ix/pdc-fe",
+      "component": "react-starter",
       "changelog-path": "CHANGELOG.md",
       "release-type": "node"
     }
