@@ -28,7 +28,7 @@
     "i18next:toc": "i18next-resources-for-ts toc -i ./src/i18n/locales -o ./src/i18n/resources.ts & prettier --write ./src/i18n"
   },
   "dependencies": {
-    "i18next": "^23.12.3",
+    "i18next": "^24.0.0",
     "i18next-browser-languagedetector": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
