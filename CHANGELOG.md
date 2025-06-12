@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.1](https://github.com/harkkozz/react-ts-vite-pnpm/compare/react-starter@v1.1.0...react-starter@v1.1.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([7792069](https://github.com/harkkozz/react-ts-vite-pnpm/commit/779206996153d6e2efd23ab4a6354e6731d4f8d3))
+* **deps:** update all non-major dependencies ([f4a6195](https://github.com/harkkozz/react-ts-vite-pnpm/commit/f4a61950c37f1462003b23233476090919efd3eb))
+* **deps:** update dependency i18next to v24 ([9373b1b](https://github.com/harkkozz/react-ts-vite-pnpm/commit/9373b1b467cf56b43a20de2e48847051ca248032))
+* **deps:** update dependency i18next to v25 ([f7e5c17](https://github.com/harkkozz/react-ts-vite-pnpm/commit/f7e5c17d2afea125976187fc174d8f502b96d4ac))
+* **deps:** update react-router monorepo to v7 ([2c16e7f](https://github.com/harkkozz/react-ts-vite-pnpm/commit/2c16e7f5127bdfeaf1aeded467f66e4a97fac262))
+
 ## [1.1.0](https://github.com/harkkozz/react-ts-vite-pnpm/compare/react-starter-v1.0.0...react-starter@v1.1.0) (2024-11-06)
 
 
