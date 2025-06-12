@@ -10,6 +10,7 @@
     "pnpm": ">=9",
     "npm": "please-use-pnpm"
   },
+  "type": "module",
   "private": true,
   "version": "1.1.0",
   "scripts": {
@@ -28,13 +29,15 @@
     "i18next:toc": "i18next-resources-for-ts toc -i ./src/i18n/locales -o ./src/i18n/resources.ts & prettier --write ./src/i18n"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
     "i18next": "^25.0.0",
     "i18next-browser-languagedetector": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^15.0.1",
     "react-router": "^7.0.0",
-    "react-router-dom": "^7.0.0"
+    "react-router-dom": "^7.0.0",
+    "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
@@ -66,6 +69,7 @@
     "i18next-resources-for-ts": "^1.5.0",
     "lint-staged": "^16.0.0",
     "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
     "type-coverage": "^2.28.1",
     "typescript": "5.8.3",
     "typescript-coverage-report": "1.1.1",

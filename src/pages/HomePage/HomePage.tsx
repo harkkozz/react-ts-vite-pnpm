@@ -18,13 +18,20 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
-      <h2>{t('homePage')}</h2>
+    <div className="container">
+      <div className="mb-4 flex items-center justify-between">
+        <h2 className="text-2xl">{t('homePage')}</h2>
+
+        <select
+          className="border p-1"
+          value={language}
+          onChange={(e) => changeLanguage(e.target.value)}
+        >
+          <option value={'en'}>English</option>
+          <option value={'de'}>German</option>
+        </select>
+      </div>
       <Button bgColor="red" text={t('otherPage')} onClick={() => navigate('/other-page')} />
-      <select value={language} onChange={(e) => changeLanguage(e.target.value)}>
-        <option value={'en'}>English</option>
-        <option value={'de'}>German</option>
-      </select>
     </div>
   );
 };
