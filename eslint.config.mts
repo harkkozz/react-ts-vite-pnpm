@@ -1,24 +1,25 @@
-import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
+import { fixupPluginRules } from '@eslint/compat';
 import pluginJs from '@eslint/js';
 import typescriptEslintParser from '@typescript-eslint/parser';
 import prettierConfig from 'eslint-config-prettier';
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import pluginNoRelativeImports from 'eslint-plugin-no-relative-import-paths';
+import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 import pluginReactRefresh from 'eslint-plugin-react-refresh';
-import pluginReact from 'eslint-plugin-react/configs/recommended.js';
 import pluginUnusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 /** @type {import('typescript-eslint').Config} */
 export default [
-  { languageOptions: { globals: globals.browser } },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-  ...fixupConfigRules(pluginReact),
+  ...tseslint.config(
+    pluginJs.configs.recommended,
+    tseslint.configs.strict,
+    tseslint.configs.stylistic,
+  ),
   {
-    ignores: ['src/services/openapi/**/*.ts', 'src/services/openapi/*.ts', 'vite.config.ts'],
+    ignores: ['src/services/client/**/*.ts', 'src/services/client/*.ts', 'vite.config.ts'],
   },
   {
     settings: {
@@ -32,12 +33,13 @@ export default [
     },
     languageOptions: {
       parser: typescriptEslintParser,
-      parserOptions: { project: ['tsconfig.json'] },
-      globals: { ...globals.node, ...globals.amd, ...globals.browser },
+      parserOptions: { project: ['tsconfig.json'], ecmaFeatures: { jsx: true } },
+      globals: { ...globals.browser },
     },
   },
   {
     plugins: {
+      react: pluginReact,
       'jsx-a11y': pluginJsxA11y,
       'react-refresh': pluginReactRefresh,
       'react-hooks': fixupPluginRules(pluginReactHooks),
@@ -99,21 +101,7 @@ export default [
       'react/require-default-props': 'off',
       'unused-imports/no-unused-imports': 'error',
       curly: ['error', 'all'],
-      'lines-around-comment': [
-        'error',
-        {
-          beforeBlockComment: true,
-          afterBlockComment: true,
-          beforeLineComment: true,
-          afterLineComment: true,
-          allowBlockStart: true,
-          allowBlockEnd: true,
-          allowObjectStart: true,
-          allowObjectEnd: true,
-          allowArrayStart: true,
-          allowArrayEnd: true,
-        },
-      ],
+      'lines-around-comment': 'error',
       'unused-imports/no-unused-vars': [
         'error',
         {
