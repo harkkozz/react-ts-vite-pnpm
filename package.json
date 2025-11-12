@@ -6,7 +6,7 @@
     "url": "https://www.linkedin.com/in/harkkozz/"
   },
   "engines": {
-    "node": "22",
+    "node": "24",
     "pnpm": ">=9",
     "npm": "please-use-pnpm"
   },
@@ -48,7 +48,7 @@
     "@testing-library/react": "^16.0.0",
     "@trivago/prettier-plugin-sort-imports": "^5.0.0",
     "@types/eslint-plugin-jsx-a11y": "^6.10.0",
-    "@types/node": "^22.2.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
