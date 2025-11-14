@@ -8,13 +8,14 @@ import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 import pluginReactRefresh from 'eslint-plugin-react-refresh';
 import pluginUnusedImports from 'eslint-plugin-unused-imports';
+import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 /** @type {import('typescript-eslint').Config} */
-export default [
-  ...tseslint.configs.recommended,
-  pluginJs.configs.recommended,
+export default defineConfig([
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
   {
     ignores: ['src/services/client/**/*.ts', 'src/services/client/*.ts', 'vite.config.ts'],
   },
@@ -36,6 +37,7 @@ export default [
   },
   {
     plugins: {
+      pluginJs,
       react: pluginReact,
       'jsx-a11y': pluginJsxA11y,
       'react-refresh': pluginReactRefresh,
@@ -111,4 +113,4 @@ export default [
     },
   },
   prettierConfig,
-];
+]);
