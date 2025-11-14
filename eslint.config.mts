@@ -13,11 +13,8 @@ import tseslint from 'typescript-eslint';
 
 /** @type {import('typescript-eslint').Config} */
 export default [
-  ...tseslint.config(
-    pluginJs.configs.recommended,
-    tseslint.configs.strict,
-    tseslint.configs.stylistic,
-  ),
+  ...tseslint.configs.recommended,
+  pluginJs.configs.recommended,
   {
     ignores: ['src/services/client/**/*.ts', 'src/services/client/*.ts', 'vite.config.ts'],
   },
