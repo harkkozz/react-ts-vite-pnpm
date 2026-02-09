@@ -1,4 +1,3 @@
-import { fixupPluginRules } from '@eslint/compat';
 import pluginJs from '@eslint/js';
 import typescriptEslintParser from '@typescript-eslint/parser';
 import prettierConfig from 'eslint-config-prettier';
@@ -10,14 +9,20 @@ import pluginReactRefresh from 'eslint-plugin-react-refresh';
 import pluginUnusedImports from 'eslint-plugin-unused-imports';
 import { defineConfig } from 'eslint/config';
 import globals from 'globals';
+import process from 'node:process';
 import tseslint from 'typescript-eslint';
 
 /** @type {import('typescript-eslint').Config} */
 export default defineConfig([
+  pluginReactHooks.configs.flat['recommended-latest'],
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
   {
-    ignores: ['src/services/client/**/*.ts', 'src/services/client/*.ts', 'vite.config.ts'],
+    ignores: [
+      'src/services/client/**/*.ts',
+      'src/services/client/*.ts',
+      'src/services/client/core/*.ts',
+    ],
   },
   {
     settings: {
@@ -36,12 +41,21 @@ export default defineConfig([
     },
   },
   {
+    files: ['vite.config.js', '*.config.ts'],
+    languageOptions: {
+      parser: typescriptEslintParser,
+      parserOptions: {
+        project: ['tsconfig.json', 'tsconfig.node.json'],
+        tsconfigRootDir: process.cwd(),
+      },
+    },
+  },
+  {
     plugins: {
       pluginJs,
       react: pluginReact,
       'jsx-a11y': pluginJsxA11y,
       'react-refresh': pluginReactRefresh,
-      'react-hooks': fixupPluginRules(pluginReactHooks),
       'no-relative-import-paths': pluginNoRelativeImports,
       'unused-imports': pluginUnusedImports,
     },
