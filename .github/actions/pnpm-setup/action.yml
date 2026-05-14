@@ -7,7 +7,7 @@ runs:
       with:
         node-version-file: .node-version
 
-    - uses: pnpm/action-setup@v6.0.3
+    - uses: pnpm/action-setup@v6.0.8
       with:
         version: latest
         run_install: false
